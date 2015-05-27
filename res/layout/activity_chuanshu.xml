@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chuanshu_Welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="欢迎来到XX基站"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top" >
+
+                <com.duhu.btshelper.SlideCutListView
+                    android:id="@+id/slideCutListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="318dp"
+                    android:layout_gravity="center"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/reader_item_divider"
+                    android:listSelector="@android:color/transparent" >
+                </com.duhu.btshelper.SlideCutListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/chuanshuedadd"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/chuanshubtadd"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="增加" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/chuanshubtsave"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="保存修改" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="checkpeople">
+        <item>杜虎</item>
+        <item>张三</item>
+    </string-array>
+    <string-array name="checkpeoplecx">
+        <item>范海伟</item>
+        <item>陈登涛</item>
+        <item>张晓军</item>
+        <item>王勇虎</item>
+    </string-array>
+    <string-array name="checkpeoplecd">
+        <item>赵思佳</item>
+        <item>乔书桓</item>
+        <item>拉元新</item>
+        <item>赵晓楠</item>
+    </string-array>
+    <string-array name="checkpeoplecb">
+        <item>伊万军</item>
+        <item>喇刚</item>
+        <item>高超</item>
+        <item>程俊文</item>
+    </string-array>
+    <string-array name="checkpeoplecz">
+        <item>王小波</item>
+        <item>郝云</item>
+        <item>米剑锋</item>
+    </string-array>
+    <string-array name="btscheckdefultarray">
+        <item>良好</item>
+        <item>一般</item>
+        <item>差</item>
+    </string-array>
+    <string-array name="shebei_biaoshi">
+        <item>清晰完整</item>
+        <item>一般</item>
+        <item>漏缺</item>
+    </string-array>
+    <string-array name="shebei_banka">
+        <item>运行正常</item>
+        <item>存在告警</item>
+        <item>不正常</item>
+    </string-array>
+    <string-array name="shebei_zouxian">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+    <string-array name="unuse3">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+    <string-array name="un4">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+    <string-array name="un5">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+    <string-array name="un6">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+    <string-array name="un7">
+        <item>规范</item>
+        <item>正常</item>
+        <item>不规范</item>
+    </string-array>
+</resources>

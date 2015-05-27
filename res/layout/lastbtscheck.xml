@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lsnctvwelcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvPeople"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/bcpeople" />
+
+                    <TextView
+                        android:id="@+id/lsbctvPeople"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" 
+                        android:paddingRight="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_biaoshi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_biaoshi" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_biaoshi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_banka"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_banka" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_banka"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_zouxian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_zouxian" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_zouxian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_jietou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_jietou" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_jietou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_gaopin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_gaopin" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_gaopin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_fengshan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_fengshan" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_fengshan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_gaojing"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_gaojing" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_gaojing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvshebei_qingjie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/shebei_qingjie" />
+
+                    <TextView
+                        android:id="@+id/lsbctvshebei_qingjie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvjichu_zhanzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/jichu_zhanzhi" />
+
+                    <TextView
+                        android:id="@+id/lsbctvjichu_zhanzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvjichu_tiankui"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/jichu_tiankui" />
+
+                    <TextView
+                        android:id="@+id/lsbctvjichu_tiankui"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvjichu_shigong"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/jichu_shigong" />
+
+                    <TextView
+                        android:id="@+id/lsbctvjichu_shigong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                     <TextView
+                        android:id="@+id/lsnctvhuanjing_wendu"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/huanjing_wendu" />
+
+                    <TextView
+                        android:id="@+id/lsbctvhuanjing_wendu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                     <TextView
+                        android:id="@+id/lsnctvhuanjing_shidu"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/huanjing_shidu" />
+
+                    <TextView
+                        android:id="@+id/lsbctvhuanjing_shidu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                     <TextView
+                        android:id="@+id/lsnctvhuanjing_qingjie"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/huanjing_qingjie" />
+
+                    <TextView
+                        android:id="@+id/lsbctvhuanjing_qingjie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvhuanjing_xiaofang"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/huanjing_xiaofang" />
+
+                    <TextView
+                        android:id="@+id/lsbctvhuanjing_xiaofang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvhuanjing_qita"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/huanjing_qita" />
+
+                    <TextView
+                        android:id="@+id/lsbctvhuanjing_qita"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvtiankui_xian"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tiankui_xian" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtiankui_xian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvtiankui_mifeng"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tiankui_mifeng" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtiankui_mifeng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvtiankui_jiedi"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tiankui_jiedi" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtiankui_jiedi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvtiankui_wanqu"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tiankui_wanqu" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtiankui_wanqu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvtieta"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tieta" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtieta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvkongtiao_gaojing"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/kongtiao_gaojing" />
+
+                    <TextView
+                        android:id="@+id/lsbctvkongtiao_gaojing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvkongtiao_yunxing"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/kongtiao_yunxing" />
+
+                    <TextView
+                        android:id="@+id/lsbctvkongtiao_yunxing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvkongtiao_qingjie"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/kongtiao_qingjie" />
+
+                    <TextView
+                        android:id="@+id/lsbctvkongtiao_qingjie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvdonglixitong"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/donglixitong" />
+
+                    <TextView
+                        android:id="@+id/lsbctvdonglixitong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvfangleijiedi"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/fangleijiedi" />
+
+                    <TextView
+                        android:id="@+id/lsbctvfangleijiedi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvchuanshu_banka"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/chuanshu_banka" />
+
+                    <TextView
+                        android:id="@+id/lsbctvchuanshu_banka"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvchuanshu_gaojing"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/chuanshu_gaojing" />
+
+                    <TextView
+                        android:id="@+id/lsbctvchuanshu_gaojing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lsnctvchuanshu_jietou"
+                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tiankui_jiedi" />
+
+                    <TextView
+                        android:id="@+id/lsbctvchuanshu_jietou"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:orientation="horizontal">
+		
+        <Button
+            android:id="@+id/lsbcbtreturn"
+             android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/lsbcreturn" />
+    </LinearLayout>
+
+</LinearLayout>

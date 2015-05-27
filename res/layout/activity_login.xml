@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/ctlogo" />
+
+    <LinearLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:layout_weight="1"
+        android:background="@drawable/background_login_div"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="用户名：" android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etusername"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="请输入用户名"
+                android:inputType="text"
+                android:singleLine="true" android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3dp"
+                android:text="密  码：" android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etuserpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_weight="0.5">
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/login_loginbtn"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/login_reset"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+
+</LinearLayout>
