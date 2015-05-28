@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <activity
-            android:name=".LoginActivity"
+            android:name="com.duhu.btshelper.SplashActivity"
             android:label="@string/app_name" >
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,6 +51,8 @@
         <activity android:name="com.duhu.btshelper.BTSCheck" >
         </activity>
         <activity android:name="com.duhu.btshelper.LastBtsCheck" >
+        </activity>
+         <activity android:name="com.duhu.btshelper.LoginActivity" >
         </activity>
     </application>
 

@@ -60,6 +60,7 @@ public class MainWIN extends TabActivity {
 						new Intent(this, ChuanshuActivity.class)
 								.putExtras(bundle1));
 		tabHost.addTab(tabSpec4);
+		
 		slidingMenu = new SlidingMenu(this);
 		slidingMenu.setMode(SlidingMenu.LEFT);
 		slidingMenu.setBehindOffsetRes(R.dimen.slidin_menu_offset);

@@ -27,7 +27,6 @@ public class BasicdataActivity extends Activity {
 			etfangweijiao2, etguagao, ethaiba, etxiaiqngjiao0, etxiaqingjiao1,
 			etxiaqingjiao2;
 	Button btsave;
-//	Button btreset;
 	private String[] strings;
 	private static ProgressDialog dialog;
 	private static final int FLAG_LOGIN_SUCCESS = 1;
