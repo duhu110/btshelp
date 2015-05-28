@@ -8,13 +8,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	private EditText etBtsid;
-	private Button btGotoerweima, btGotomenu;
-	private Button btIdinput, btGotolist;
+	RelativeLayout btGotoerweima;
+	private RelativeLayout btGotomenu;
+	private ImageButton btIdinput;
+	RelativeLayout btGotolist;
 	private TextView tvBtsidcheck;
 	private String btsid;
 	private int BTSID = 0;
@@ -30,11 +34,11 @@ public class MainActivity extends Activity {
 		username = bundle.getString("username");
 
 		etBtsid = (EditText) findViewById(R.id.main_btsid);
-		btGotoerweima = (Button) findViewById(R.id.main_erweima);
-		btGotomenu = (Button) findViewById(R.id.main_gotohelper);
+		btGotoerweima = (RelativeLayout) findViewById(R.id.main_erweima);
+		btGotomenu = (RelativeLayout) findViewById(R.id.main_gotohelper);
+		btGotolist = (RelativeLayout) findViewById(R.id.main_sarchlist);
 		tvBtsidcheck = (TextView) findViewById(R.id.main_idchek);
-		btIdinput = (Button) findViewById(R.id.main_idinputsure);
-		btGotolist = (Button) findViewById(R.id.main_sarchlist);
+		btIdinput = (ImageButton) findViewById(R.id.main_idinputsure);
 		btIdinput.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {

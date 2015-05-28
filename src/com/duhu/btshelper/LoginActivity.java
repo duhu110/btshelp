@@ -39,6 +39,7 @@ public class LoginActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		getActionBar().hide();
 		this.init();
 		
 		btnlogin.setOnClickListener(new OnClickListener() {
