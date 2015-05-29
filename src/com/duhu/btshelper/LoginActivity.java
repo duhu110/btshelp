@@ -52,7 +52,7 @@ public class LoginActivity extends Activity {
 				//if (dialog == null) {
 					dialog = new ProgressDialog(LoginActivity.this) ;
 				//}
-				dialog.setTitle("wait");
+				
 				dialog.setMessage("ÕýÔÚµÇê‘");
 				dialog.setCancelable(false);
 				dialog.show();

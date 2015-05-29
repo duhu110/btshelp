@@ -9,30 +9,44 @@
         android:id="@+id/btscheckrelative1"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_margin="5dp"
-        android:background="@color/white" >
+        android:background="@color/lime" >
 
+        <ImageView
+            android:id="@+id/basictitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_launcher" />
+        
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/basictitle3"
+            android:gravity="center_vertical"
+            android:text="基站巡检" 
+            android:textSize="18sp"/>
+        <!-- <TextView
             android:id="@+id/bctvwelcome"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/bcbtview" />
+            android:layout_toLeftOf="@+id/bcbtview" /> -->
 
         <Button
             android:id="@+id/bcbtview"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/bcbtsave"
-            android:text="查看" />
+            android:text="记录" 
+            android:background="@color/lime"/>
 
         <Button
+            android:background="@color/lime"
             android:id="@+id/bcbtsave"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:text="提交" />
+            android:text="保存" />
     </RelativeLayout>
 
     <ScrollView

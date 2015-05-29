@@ -59,7 +59,7 @@ public class BasicdataActivity extends SherlockActivity {
 		etxiaqingjiao2 = (EditText) findViewById(R.id.etbasicdataxiaqingjiao2);
 		btsave = (Button) findViewById(R.id.basicdatabtsave);
 //		btreset = (Button) findViewById(R.id.btbasicdatareset);
-		tvWelcome = (TextView) findViewById(R.id.basicWelcome);
+//		tvWelcome = (TextView) findViewById(R.id.basicWelcome);
 	}
 	
 	@Override
@@ -73,7 +73,7 @@ public class BasicdataActivity extends SherlockActivity {
 		Log.d("init", "initsucess");
 		Bundle bundle = this.getIntent().getExtras();
 		BTSID = bundle.getInt("BTSID");
-		tvWelcome.setText("欢迎来到" + BTSID + "号站！");
+//		tvWelcome.setText("欢迎来到" + BTSID + "号站！");
 		Log.d("tvwelcome", "setsucess");
 		if (dialog == null) {
 			dialog = new ProgressDialog(BasicdataActivity.this);
@@ -82,7 +82,7 @@ public class BasicdataActivity extends SherlockActivity {
 		dialog.setTitle("wait");
 		dialog.setMessage("正在加载");
 		dialog.setCancelable(false);
-		dialog.show();
+		//dialog.show();
 		Log.d("dialog", "showsuccess");
 		new Thread(new Runnable() {
 			@Override

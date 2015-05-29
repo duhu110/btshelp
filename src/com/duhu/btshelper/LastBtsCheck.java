@@ -88,7 +88,7 @@ public class LastBtsCheck extends Activity {
 		dialog.setTitle("wait");
 		dialog.setMessage("е§дкМгди");
 		dialog.setCancelable(false);
-		dialog.show();
+		//dialog.show();
 		Log.d("dialog", "showsuccess");
 		new Thread(new Runnable() {
 			@Override

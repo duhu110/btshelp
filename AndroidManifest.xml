@@ -39,12 +39,12 @@
         <activity android:name="com.duhu.btshelper.MainActivity" >
         </activity>
         <activity 
-            android:theme="@android:style/Theme.Holo.NoActionBar"
             android:name="com.duhu.btshelper.MainWIN" >
         </activity>
         <activity 
-            android:theme="@style/Theme.Sherlock.Light"  
             android:name="com.duhu.btshelper.BasicdataActivity" >
+        </activity>
+        <activity android:name="com.duhu.btshelper.About" >
         </activity>
         <activity android:name="com.duhu.btshelper.BtsCheckActivity" >
         </activity>

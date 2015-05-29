@@ -25,6 +25,7 @@ public class MainWIN extends TabActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mainwin);
+		getActionBar().hide();
 		TabHost tabHost = (TabHost) findViewById(android.R.id.tabhost);
 
 		Bundle bundle = this.getIntent().getExtras();
@@ -75,25 +76,26 @@ public class MainWIN extends TabActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				new AlertDialog.Builder(MainWIN.this)
-						.setTitle("关于")
-						.setIcon(R.drawable.ic_aboutalartdialog)
-						.setMessage(
-								"\n\n\n\n" +
-								"这是一个测试APP，" +
-								"\n致力于让维护工作" +
-								"\n更加便捷有效！" +
-								"\n\n\n\n联系18997485868@189.cn" +
-								"\n\n\n\nCopyright © 2015 duhu \nAll Rights Reserved.")
-						.setPositiveButton("确定",
-								new DialogInterface.OnClickListener() {
-									@Override
-									public void onClick(
-											DialogInterface dialogInterface,
-											int i) {
-										dialogInterface.dismiss();
-									}
-								}).show();
+				startActivity(new Intent(MainWIN.this, About.class));
+//				new AlertDialog.Builder(MainWIN.this)
+//						.setTitle("关于")
+//						.setIcon(R.drawable.ic_aboutalartdialog)
+//						.setMessage(
+//								"\n\n\n\n" +
+//								"这是一个测试APP，" +
+//								"\n致力于让维护工作" +
+//								"\n更加便捷有效！" +
+//								"\n\n\n\n联系18997485868@189.cn" +
+//								"\n\n\n\nCopyright © 2015 duhu \nAll Rights Reserved.")
+//						.setPositiveButton("确定",
+//								new DialogInterface.OnClickListener() {
+//									@Override
+//									public void onClick(
+//											DialogInterface dialogInterface,
+//											int i) {
+//										dialogInterface.dismiss();
+//									}
+//								}).show();
 			}
 		});
 		buttonrecheck.setOnClickListener(new OnClickListener() {

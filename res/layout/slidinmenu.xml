@@ -3,7 +3,7 @@
     android:id="@+id/slidelayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff999999"
+    android:background="@color/azure"
     android:orientation="vertical" >
 
     <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
@@ -17,23 +17,33 @@
             android:orientation="vertical" >
 
             <Button
+                android:background="@color/lightcoral"
                 android:id="@+id/slidingmenuloging"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="@string/relogin" />
 
             <Button
+                android:background="@color/lightcoral"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:id="@+id/slidingmenuidcheck"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/reidcheck" />
 
             <Button
+                android:background="@color/lightcoral"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:id="@+id/slidingmenuabout"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:text="@string/slidinmenuabout" />
         </LinearLayout>
     </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>

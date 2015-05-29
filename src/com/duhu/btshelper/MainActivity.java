@@ -84,6 +84,7 @@ public class MainActivity extends Activity {
 		btGotolist.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				
 				Intent intent = new Intent(MainActivity.this,
 						BTSNameListActivity.class);
 				// intent.putExtra("BTSIDtoLIST",BTSID);

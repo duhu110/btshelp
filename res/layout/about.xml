@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/aboutid1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/aboutid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutid1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="基站助手"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/aboutid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutid2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="V1.0.0"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/aboutid4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutid3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="致力于研究基站基础数据维护管理的新方法！"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/aboutid5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutid4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="此APP还在测试开发之中，如有问题请联系18997485868@189.cn"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/aboutid6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutid5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/aboutid7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright © 2015 duhu All Rights Reserved."
+        android:textSize="12sp" />
+
+</RelativeLayout>

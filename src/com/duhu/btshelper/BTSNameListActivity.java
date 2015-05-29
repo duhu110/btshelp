@@ -52,7 +52,7 @@ public class BTSNameListActivity extends Activity {
 		dialog.setTitle("wait");
 		dialog.setMessage("ÕýÔÚ¼ÓÔØ");
 		dialog.setCancelable(false);
-		dialog.show();
+		//dialog.show();
 		new Thread(new Runnable() {
 
 			@Override
@@ -94,6 +94,7 @@ public class BTSNameListActivity extends Activity {
 				 Intent intent = new Intent();
 				 intent.putExtra("BTSIDfromLIST",BTSID);
 				 setResult(RESULT_OK,intent);
+				 //finishActivity(RESULT_OK);
 				 finish();
 				 }else {
 				 Intent intent = new Intent();

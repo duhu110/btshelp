@@ -28,7 +28,7 @@ public class BTSINFOActivity extends Activity implements RemoveListener {
 	private ArrayAdapter<String> adapter;
 	private IHandler handler = new IHandler(this);
 //	private ListView listView;
-	private TextView tvwelcome;
+//	private TextView tvwelcome;
 	private EditText etaddEditText;
 	private Button  btsave;
 	private ImageButton btadd;
@@ -46,7 +46,7 @@ public class BTSINFOActivity extends Activity implements RemoveListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bts_info);
-		tvwelcome = (TextView) findViewById(R.id.btsinfo_Welcome);
+//		tvwelcome = (TextView) findViewById(R.id.btsinfo_Welcome);
 		etaddEditText = (EditText) findViewById(R.id.btsinfoedadd);
 		btadd = (ImageButton) findViewById(R.id.btsinfobtadd);
 		btsave = (Button) findViewById(R.id.btsinfobtsave);
@@ -54,7 +54,7 @@ public class BTSINFOActivity extends Activity implements RemoveListener {
 		
 		Bundle bundle = this.getIntent().getExtras();
 		Btsid = bundle.getInt("BTSID");
-		tvwelcome.setText("ª∂”≠¿¥µΩ" + Btsid + "∫≈’æ£°");
+//		tvwelcome.setText("ª∂”≠¿¥µΩ" + Btsid + "∫≈’æ£°");
 		if (dialog == null) {
 			dialog = new ProgressDialog(BTSINFOActivity.this);
 		}
