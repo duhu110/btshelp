@@ -16,18 +16,20 @@
 
         <EditText
             android:id="@+id/main_btsid"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:layout_marginLeft="15dp"
             android:hint="请输入基站BTSID"
             android:numeric="integer"
-            android:textSize="15sp" />
+            android:textSize="15sp" 
+            android:layout_toLeftOf="@+id/main_idinputsure"
+            />
 
         <ImageButton
             android:id="@+id/main_idinputsure"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_toRightOf="@+id/main_btsid"
+            android:layout_toLeftOf="@+id/mainactivityimageview1"
             android:src="@drawable/submit" />
         <!--
                  <Button
@@ -40,6 +42,7 @@
         -->
 
         <ImageView
+            android:id="@+id/mainactivityimageview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

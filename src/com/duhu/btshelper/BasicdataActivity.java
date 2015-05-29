@@ -1,6 +1,9 @@
 package com.duhu.btshelper;
 
 import java.lang.ref.WeakReference;
+
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockActivity;
 import com.duhu.btshelper.entity.BasicdataEntity;
 import com.duhu.btshelper.service.BasicDataService;
 import com.duhu.btshelper.service.BasicDataServiceImpl;
@@ -12,6 +15,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,7 +25,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class BasicdataActivity extends Activity {
+public class BasicdataActivity extends SherlockActivity {
 
 	private TextView tvWelcome;
 	private int BTSID;
@@ -62,6 +68,7 @@ public class BasicdataActivity extends Activity {
 		setContentView(R.layout.activity_basicdata);
 		this.init();
 		
+	//	getActionBar().setTitle("基础数据管理");
 		this.strings = new String[10];
 		Log.d("init", "initsucess");
 		Bundle bundle = this.getIntent().getExtras();
@@ -164,6 +171,134 @@ public class BasicdataActivity extends Activity {
 				}).start();
 			}
 		});
+	}
+
+	
+//
+//	@Override
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//		switch (item.getItemId()) {
+//		case R.id.menu_saveitem:
+//			String jindu = etjindu.getText().toString();
+//			String weidu = etweidu.getText().toString();
+//			String fangweijiao_0 = etfangweijiao0.getText().toString();
+//			String fangweijiao_1 = etfangweijiao1.getText().toString();
+//			String fangweijiao_2 = etfangweijiao2.getText().toString();
+//			String guagao = etguagao.getText().toString();
+//			String xiaqingjiao_0 = etxiaiqngjiao0.getText().toString();
+//			String xiaqingjiao_1 = etxiaiqngjiao0.getText().toString();
+//			String xiaqingjiao_2 = etxiaiqngjiao0.getText().toString();
+//			String haiba = ethaiba.getText().toString();
+//			final BasicdataEntity basicdataEntity = new BasicdataEntity();
+//			 basicdataEntity.setBtsid(BTSID);
+//					 basicdataEntity.setJindu(jindu);
+//					 basicdataEntity.setWeidu(weidu);
+//					 basicdataEntity.setFangweijiao0(fangweijiao_0);
+//					 basicdataEntity.setFangweijiao1(fangweijiao_1);
+//					 basicdataEntity.setFangweijiao2(fangweijiao_2);
+//					 basicdataEntity.setGuagao(guagao);
+//					 basicdataEntity.setXiaqingjiao0(xiaqingjiao_0);
+//					 basicdataEntity.setXiaqingjiao1(xiaqingjiao_1);
+//					 basicdataEntity.setXiaqingjiao2(xiaqingjiao_2);
+//					 basicdataEntity.setHaiba(haiba);
+//					 
+//			new Thread(new Runnable() {
+//				@Override
+//				public void run() {
+//					try {
+//						basicDataService1.baocun(basicdataEntity);
+//						handler.sendEmptyMessage(FLAG_BAOCUN_SUCCESS);
+//						Log.d("baocun", "success");
+//					} catch (ServiceRulesException e) {
+//						e.printStackTrace();
+//						Message msg = new Message();
+//						Bundle data = new Bundle();
+//						data.putSerializable("baocun_ERROR", e.getMessage());
+//						msg.setData(data);
+//						handler.sendMessage(msg);
+//						Log.d("thread", "4");
+//					} catch (Exception e) {
+//						e.printStackTrace();
+//						Message msg = new Message();
+//						Bundle data = new Bundle();
+//						data.putSerializable("LOGIN_ERROR",
+//								FLAG_BAOCUN_ERROR);
+//						msg.setData(data);
+//						handler.sendMessage(msg);
+//					}
+//				}
+//			}).start();
+//		default:
+//			return super.onOptionsItemSelected(item);
+//		}
+//		
+//	}
+
+	@Override
+	public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
+		getSupportMenuInflater().inflate(R.menu.savemenu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(
+			com.actionbarsherlock.view.MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menu_saveitem:
+			String jindu = etjindu.getText().toString();
+			String weidu = etweidu.getText().toString();
+			String fangweijiao_0 = etfangweijiao0.getText().toString();
+			String fangweijiao_1 = etfangweijiao1.getText().toString();
+			String fangweijiao_2 = etfangweijiao2.getText().toString();
+			String guagao = etguagao.getText().toString();
+			String xiaqingjiao_0 = etxiaiqngjiao0.getText().toString();
+			String xiaqingjiao_1 = etxiaiqngjiao0.getText().toString();
+			String xiaqingjiao_2 = etxiaiqngjiao0.getText().toString();
+			String haiba = ethaiba.getText().toString();
+			final BasicdataEntity basicdataEntity = new BasicdataEntity();
+			 basicdataEntity.setBtsid(BTSID);
+					 basicdataEntity.setJindu(jindu);
+					 basicdataEntity.setWeidu(weidu);
+					 basicdataEntity.setFangweijiao0(fangweijiao_0);
+					 basicdataEntity.setFangweijiao1(fangweijiao_1);
+					 basicdataEntity.setFangweijiao2(fangweijiao_2);
+					 basicdataEntity.setGuagao(guagao);
+					 basicdataEntity.setXiaqingjiao0(xiaqingjiao_0);
+					 basicdataEntity.setXiaqingjiao1(xiaqingjiao_1);
+					 basicdataEntity.setXiaqingjiao2(xiaqingjiao_2);
+					 basicdataEntity.setHaiba(haiba);
+					 
+			new Thread(new Runnable() {
+				@Override
+				public void run() {
+					try {
+						basicDataService1.baocun(basicdataEntity);
+						handler.sendEmptyMessage(FLAG_BAOCUN_SUCCESS);
+						Log.d("baocun", "success");
+					} catch (ServiceRulesException e) {
+						e.printStackTrace();
+						Message msg = new Message();
+						Bundle data = new Bundle();
+						data.putSerializable("baocun_ERROR", e.getMessage());
+						msg.setData(data);
+						handler.sendMessage(msg);
+						Log.d("thread", "4");
+					} catch (Exception e) {
+						e.printStackTrace();
+						Message msg = new Message();
+						Bundle data = new Bundle();
+						data.putSerializable("LOGIN_ERROR",
+								FLAG_BAOCUN_ERROR);
+						msg.setData(data);
+						handler.sendMessage(msg);
+					}
+				}
+			}).start();
+
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+		
 	}
 
 	private void showtip(String str) {

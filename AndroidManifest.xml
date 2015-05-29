@@ -35,12 +35,16 @@
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity android:name="com.duhu.btshelper.BTSNameListActivity" >
-        </activity>
+        </activity> 
         <activity android:name="com.duhu.btshelper.MainActivity" >
         </activity>
-        <activity android:name="com.duhu.btshelper.MainWIN" >
+        <activity 
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:name="com.duhu.btshelper.MainWIN" >
         </activity>
-        <activity android:name="com.duhu.btshelper.BasicdataActivity" >
+        <activity 
+            android:theme="@style/Theme.Sherlock.Light"  
+            android:name="com.duhu.btshelper.BasicdataActivity" >
         </activity>
         <activity android:name="com.duhu.btshelper.BtsCheckActivity" >
         </activity>

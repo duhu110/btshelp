@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash"
+    android:background="@drawable/splash1"
     android:orientation="vertical" >
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:src="@drawable/img_splash_text1" >
+        android:src="@drawable/img_splash_text2" >
     </ImageView>
 
     <ImageView
@@ -23,7 +23,7 @@
         android:layout_marginBottom="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/img_splash_small1" >
+        android:src="@drawable/img_splash_small2" >
     </ImageView>
 
 </RelativeLayout>

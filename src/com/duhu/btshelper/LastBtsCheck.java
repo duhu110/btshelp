@@ -1,4 +1,5 @@
 package com.duhu.btshelper;
+
 import java.lang.ref.WeakReference;
 import com.duhu.btshelper.entity.BtsCheckEntity;
 import com.duhu.btshelper.service.BtsCheckService;
@@ -6,39 +7,36 @@ import com.duhu.btshelper.service.BtsCheckServiceImpl;
 import com.duhu.btshelper.service.ServiceRulesException;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class LastBtsCheck extends Activity {
 
-	private TextView spPeople, spshebei_biaoshi, spshebei_banka, spshebei_zouxian,
-			spchuanshu_gaojing, spfangleijiedi, spkongtiao_gaojing, sptieta,
-			spshebei_jietou, spshebei_gaopin, spshebei_fengshan,
-			spkongtiao_yunxing, spchuanshu_jietou, spshebei_gaojing,
-			spdonglixitong, spshebei_qingjie, spchuanshu_banka,
-			spjichu_zhanzhi, spkongtiao_qingjie, spjichu_tiankui,
-			spjichu_shigong, sphuanjing_wendu, sphuanjing_shidu,
-			sphuanjing_qingjie, sphuanjing_xiaofang, sphuanjing_qita,
-			sptiankui_xian, sptiankui_mifeng, sptiankui_jiedi, sptiankui_wanqu;
+	private TextView spPeople, spshebei_biaoshi, spshebei_banka,
+			spshebei_zouxian, spchuanshu_gaojing, spfangleijiedi,
+			spkongtiao_gaojing, sptieta, spshebei_jietou, spshebei_gaopin,
+			spshebei_fengshan, spkongtiao_yunxing, spchuanshu_jietou,
+			spshebei_gaojing, spdonglixitong, spshebei_qingjie,
+			spchuanshu_banka, spjichu_zhanzhi, spkongtiao_qingjie,
+			spjichu_tiankui, spjichu_shigong, sphuanjing_wendu,
+			sphuanjing_shidu, sphuanjing_qingjie, sphuanjing_xiaofang,
+			sphuanjing_qita, sptiankui_xian, sptiankui_mifeng, sptiankui_jiedi,
+			sptiankui_wanqu;
 
 	private int btsid;
-	private Button returnButton;
 	BtsCheckEntity btsCheckEntity;
 	private static ProgressDialog dialog;
 	private static final int FLAG_SAVE_SUCCESS = 1;
 	private static final int FLAG_SAVE_ERROR = 0;
 	BtsCheckService btsCheckService = new BtsCheckServiceImpl();
 	private IHandler handler = new IHandler(this);
+
 	private void init() {
-		returnButton = (Button) findViewById(R.id.lsbcbtreturn);
 		spPeople = (TextView) findViewById(R.id.lsbctvPeople);
 		spshebei_biaoshi = (TextView) findViewById(R.id.lsbctvshebei_biaoshi);
 		spshebei_banka = (TextView) findViewById(R.id.lsbctvshebei_banka);
@@ -71,15 +69,18 @@ public class LastBtsCheck extends Activity {
 		spchuanshu_gaojing = (TextView) findViewById(R.id.lsbctvchuanshu_gaojing);
 		spchuanshu_jietou = (TextView) findViewById(R.id.lsbctvchuanshu_jietou);
 	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lastbtscheck);
 		this.init();
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setTitle("最近一次巡检记录");
 		Bundle bundle = this.getIntent().getExtras();
 		btsid = bundle.getInt("BTSID");
 		btsCheckEntity = new BtsCheckEntity();
-		
+
 		if (dialog == null) {
 			dialog = new ProgressDialog(LastBtsCheck.this);
 		}
@@ -117,26 +118,23 @@ public class LastBtsCheck extends Activity {
 				}
 			}
 		}).start();
-		returnButton.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				if (btsCheckEntity != null){
-					 Intent intent = new Intent();
-					 intent.putExtra("result","loadsuccess");
-					 setResult(RESULT_OK,intent);
-					 finish();
-					 }else {
-					 Intent intent = new Intent();
-					 setResult(RESULT_CANCELED,intent);
-					 finish();
-					 }
-			}
-		});
 	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			this.finish();
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+		
+	}
+
 	private void showtip(String string) {
 		Toast.makeText(LastBtsCheck.this, string, Toast.LENGTH_SHORT).show();
 	}
+
 	private void settext() {
 		spPeople.setText(btsCheckEntity.getPeople());
 		spshebei_banka.setText(btsCheckEntity.getShebei_banka());
@@ -169,6 +167,7 @@ public class LastBtsCheck extends Activity {
 		spchuanshu_gaojing.setText(btsCheckEntity.getChuanshu_gaojing());
 		spchuanshu_jietou.setText(btsCheckEntity.getChuanshu_jietou());
 	}
+
 	private static class IHandler extends Handler {
 		private final WeakReference<Activity> mActivity;
 
@@ -190,8 +189,8 @@ public class LastBtsCheck extends Activity {
 				Log.d("settext", "1");
 				break;
 			case 0:
-//				String msgString = (String) msg.getData().getSerializable(
-//						"LOGIN_ERROR");
+				// String msgString = (String) msg.getData().getSerializable(
+				// "LOGIN_ERROR");
 				((LastBtsCheck) mActivity.get()).showtip("ERROR");
 
 				break;

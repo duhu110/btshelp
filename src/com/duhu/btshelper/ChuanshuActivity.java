@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.duhu.btshelper.SlideCutListView.RemoveDirection;
@@ -29,7 +30,8 @@ public class ChuanshuActivity extends Activity implements RemoveListener{
 	private List<String> dataSourceList = new ArrayList<String>();
 	private TextView tvwelcome;
 	private EditText etaddEditText;
-	private Button btadd,btsave;
+	ImageButton btadd;
+	private Button btsave;
 	private int Btsid;
 	private static ProgressDialog dialog;
 	private static final int FLAG_LOGIN_SUCCESS = 1;
@@ -43,7 +45,7 @@ public class ChuanshuActivity extends Activity implements RemoveListener{
 		setContentView(R.layout.activity_chuanshu);
 		tvwelcome = (TextView) findViewById(R.id.chuanshu_Welcome);
 		etaddEditText=(EditText) findViewById(R.id.chuanshuedadd);
-		btadd=(Button) findViewById(R.id.chuanshubtadd);
+		btadd=(ImageButton) findViewById(R.id.chuanshubtadd);
 		btsave=(Button) findViewById(R.id.chuanshubtsave);
 		Bundle bundle = this.getIntent().getExtras();
 		Btsid = bundle.getInt("BTSID");
