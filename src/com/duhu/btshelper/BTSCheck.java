@@ -776,8 +776,7 @@ public class BTSCheck extends Activity {
 				String str = data.getExtras().getString("result");
 				
 			} else if (resultCode == RESULT_CANCELED) {
-				Toast.makeText(BTSCheck.this, "不成功",
-						Toast.LENGTH_SHORT).show();
+		//		Toast.makeText(BTSCheck.this, "不成功",Toast.LENGTH_SHORT).show();
 			}
 			break;
 		default:

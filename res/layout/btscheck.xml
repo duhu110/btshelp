@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/btscheckrelative1"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:background="@color/lime" >
 
         <ImageView
@@ -17,35 +17,37 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:src="@drawable/ic_launcher" />
-        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/basictitle3"
             android:gravity="center_vertical"
-            android:text="基站巡检" 
-            android:textSize="18sp"/>
-        <!-- <TextView
+            android:text="基站巡检"
+            android:textSize="18sp" />
+        <!--
+             <TextView
             android:id="@+id/bctvwelcome"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/bcbtview" /> -->
+            android:layout_toLeftOf="@+id/bcbtview" />
+        -->
 
         <Button
             android:id="@+id/bcbtview"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/bcbtsave"
-            android:text="记录" 
-            android:background="@color/lime"/>
+            android:background="@color/lime"
+            android:text="记录" />
 
         <Button
-            android:background="@color/lime"
             android:id="@+id/bcbtsave"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
+            android:background="@color/lime"
             android:text="保存" />
     </RelativeLayout>
 
@@ -60,11 +62,13 @@
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -72,7 +76,6 @@
                     android:id="@+id/bctvPeople"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/bcpeople" />
@@ -86,13 +89,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_biaoshi"
@@ -110,13 +115,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_banka"
@@ -134,13 +141,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_zouxian"
@@ -158,11 +167,13 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -182,13 +193,15 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_gaopin"
@@ -206,13 +219,15 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_fengshan"
@@ -230,13 +245,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvshebei_gaojing"
@@ -254,11 +271,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -278,13 +297,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvjichu_zhanzhi"
@@ -302,13 +323,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvjichu_tiankui"
@@ -326,13 +349,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvjichu_shigong"
@@ -350,11 +375,13 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -374,11 +401,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -398,11 +427,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -422,11 +453,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -446,11 +479,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -470,13 +505,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvtiankui_xian"
@@ -494,13 +531,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvtiankui_mifeng"
@@ -518,13 +557,15 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvtiankui_jiedi"
@@ -542,13 +583,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvtiankui_wanqu"
@@ -566,11 +609,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -590,11 +635,13 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -614,13 +661,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvkongtiao_yunxing"
@@ -638,13 +687,15 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvkongtiao_qingjie"
@@ -662,11 +713,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -686,11 +739,13 @@
             </LinearLayout>
 
             <LinearLayout
-               android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -710,11 +765,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -734,11 +791,13 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
                 android:orientation="horizontal" >
 
@@ -758,13 +817,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_margin="5dp"
-                android:background="@color/white"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal" >
 
                 <TextView
                     android:id="@+id/bctvchuanshu_jietou"

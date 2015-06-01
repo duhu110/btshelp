@@ -195,12 +195,12 @@ public class ChuanshuActivity extends Activity implements RemoveListener{
 		
 		switch (direction) {
 		case RIGHT:
-			Toast.makeText(this, "ÏòÓÒÉ¾³ý  "+ position, Toast.LENGTH_SHORT).show();
-			Log.d("shanhouyou", dataSourceList.toString());
+			//Toast.makeText(this, "ÏòÓÒÉ¾³ý  "+ position, Toast.LENGTH_SHORT).show();
+			//Log.d("shanhouyou", dataSourceList.toString());
 			break;
 		case LEFT:
-			Toast.makeText(this, "Ïò×óÉ¾³ý  "+ position, Toast.LENGTH_SHORT).show();
-			Log.d("shanhouzuo", dataSourceList.toString());
+			//Toast.makeText(this, "Ïò×óÉ¾³ý  "+ position, Toast.LENGTH_SHORT).show();
+			//Log.d("shanhouzuo", dataSourceList.toString());
 			break;
 
 		default:

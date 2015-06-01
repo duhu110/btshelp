@@ -63,6 +63,34 @@
                     android:orientation="horizontal" >
 
                     <TextView
+                        android:id="@+id/lsnctvtime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="巡检时间"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lsbctvtime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
                         android:id="@+id/lsnctvshebei_biaoshi"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

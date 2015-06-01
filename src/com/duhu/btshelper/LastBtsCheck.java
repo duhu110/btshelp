@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class LastBtsCheck extends Activity {
 
-	private TextView spPeople, spshebei_biaoshi, spshebei_banka,
+	private TextView sptime,spPeople, spshebei_biaoshi, spshebei_banka,
 			spshebei_zouxian, spchuanshu_gaojing, spfangleijiedi,
 			spkongtiao_gaojing, sptieta, spshebei_jietou, spshebei_gaopin,
 			spshebei_fengshan, spkongtiao_yunxing, spchuanshu_jietou,
@@ -37,6 +37,7 @@ public class LastBtsCheck extends Activity {
 	private IHandler handler = new IHandler(this);
 
 	private void init() {
+		sptime = (TextView) findViewById(R.id.lsbctvtime);
 		spPeople = (TextView) findViewById(R.id.lsbctvPeople);
 		spshebei_biaoshi = (TextView) findViewById(R.id.lsbctvshebei_biaoshi);
 		spshebei_banka = (TextView) findViewById(R.id.lsbctvshebei_banka);
@@ -137,6 +138,7 @@ public class LastBtsCheck extends Activity {
 
 	private void settext() {
 		spPeople.setText(btsCheckEntity.getPeople());
+		sptime.setText(btsCheckEntity.getChecktime());
 		spshebei_banka.setText(btsCheckEntity.getShebei_banka());
 		spshebei_biaoshi.setText(btsCheckEntity.getShebei_biaoshi());
 		spshebei_zouxian.setText(btsCheckEntity.getShebei_zouxian());

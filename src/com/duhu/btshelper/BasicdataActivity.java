@@ -335,7 +335,7 @@ public class BasicdataActivity extends SherlockActivity {
 			switch (flag) {
 			case FLAG_LOGIN_SUCCESS:
 				Log.d("flagsuccess", "1");
-				((BasicdataActivity) mActivity.get()).showtip("loadsuccess");
+				((BasicdataActivity) mActivity.get()).showtip("º”‘ÿ≥…π¶");
 				((BasicdataActivity) mActivity.get()).settext();
 				Log.d("settext", "1");
 				break;
