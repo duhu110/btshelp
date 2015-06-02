@@ -38,7 +38,7 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int ic_launcher = 0x7f020083;
-		public static final int navbar = 0x7f020098;
+		public static final int navbar = 0x7f020099;
 	}
 	public static final class id {
 		public static final int auto_focus = 0x7f060007;

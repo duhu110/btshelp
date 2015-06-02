@@ -61,7 +61,7 @@ public class MainWIN extends TabActivity {
 						new Intent(this, ChuanshuActivity.class)
 								.putExtras(bundle1));
 		tabHost.addTab(tabSpec4);
-		
+
 		slidingMenu = new SlidingMenu(this);
 		slidingMenu.setMode(SlidingMenu.LEFT);
 		slidingMenu.setBehindOffsetRes(R.dimen.slidin_menu_offset);
@@ -72,30 +72,9 @@ public class MainWIN extends TabActivity {
 		buttonabout = (Button) findViewById(R.id.slidingmenuabout);
 		buttonrecheck = (Button) findViewById(R.id.slidingmenuidcheck);
 		buttonabout.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				startActivity(new Intent(MainWIN.this, About.class));
-//				new AlertDialog.Builder(MainWIN.this)
-//						.setTitle("关于")
-//						.setIcon(R.drawable.ic_aboutalartdialog)
-//						.setMessage(
-//								"\n\n\n\n" +
-//								"这是一个测试APP，" +
-//								"\n致力于让维护工作" +
-//								"\n更加便捷有效！" +
-//								"\n\n\n\n联系18997485868@189.cn" +
-//								"\n\n\n\nCopyright © 2015 duhu \nAll Rights Reserved.")
-//						.setPositiveButton("确定",
-//								new DialogInterface.OnClickListener() {
-//									@Override
-//									public void onClick(
-//											DialogInterface dialogInterface,
-//											int i) {
-//										dialogInterface.dismiss();
-//									}
-//								}).show();
 			}
 		});
 		buttonrecheck.setOnClickListener(new OnClickListener() {
@@ -115,7 +94,6 @@ public class MainWIN extends TabActivity {
 			@Override
 			public void onClick(View v) {
 				startActivity(new Intent(MainWIN.this, LoginActivity.class));
-
 			}
 		});
 	}
@@ -130,6 +108,7 @@ public class MainWIN extends TabActivity {
 					public void onClick(DialogInterface dialog, int which) {
 						// TODO Auto-generated method stub
 						finish();
+						System.exit(0);
 					}
 				})
 				.setNegativeButton("取消", new DialogInterface.OnClickListener() {
@@ -143,12 +122,33 @@ public class MainWIN extends TabActivity {
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		switch (keyCode) {
-		case KeyEvent.KEYCODE_MENU:
+		if (keyCode == KeyEvent.KEYCODE_MENU) {
 			slidingMenu.toggle(true);
-			break;
-		default:
-			break;
+		} else if (keyCode == KeyEvent.KEYCODE_BACK
+				&& event.getAction() == KeyEvent.ACTION_DOWN) {
+			new AlertDialog.Builder(MainWIN.this)
+					.setTitle("确定退出？")
+					.setMessage("确定退出吗？")
+					.setPositiveButton("确定",
+							new DialogInterface.OnClickListener() {
+
+								@Override
+								public void onClick(DialogInterface dialog,
+										int which) {
+									// TODO Auto-generated method stub
+									finish();
+									System.exit(0);
+								}
+							})
+					.setNegativeButton("取消",
+							new DialogInterface.OnClickListener() {
+
+								@Override
+								public void onClick(DialogInterface dialog,
+										int which) {
+									dialog.dismiss();
+								}
+							}).show();
 		}
 		return super.onKeyDown(keyCode, event);
 	}

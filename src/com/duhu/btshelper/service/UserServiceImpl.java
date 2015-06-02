@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
 //		HttpResponse response = client.execute(post);
 		//get
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101:8080/BTSHelper/Login.do?LoginName="
+		String uri = "http://192.168.1.101/BTSHelper/Login.do?LoginName="
 				+ loginName + "&LoginPassword=" + loginPassword;
 		HttpGet get = new HttpGet(uri);
 		HttpResponse response = client.execute(get);

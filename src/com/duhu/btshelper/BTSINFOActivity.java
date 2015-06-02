@@ -55,13 +55,13 @@ public class BTSINFOActivity extends Activity implements RemoveListener {
 		Bundle bundle = this.getIntent().getExtras();
 		Btsid = bundle.getInt("BTSID");
 //		tvwelcome.setText("欢迎来到" + Btsid + "号站！");
-		if (dialog == null) {
-			dialog = new ProgressDialog(BTSINFOActivity.this);
-		}
-		dialog.setTitle("wait");
-		dialog.setMessage("正在加载");
-		dialog.setCancelable(false);
-		dialog.show();
+//		if (dialog == null) {
+//			dialog = new ProgressDialog(BTSINFOActivity.this);
+//		}
+//		dialog.setTitle("wait");
+//		dialog.setMessage("正在加载");
+//		dialog.setCancelable(false);
+//		dialog.show();
 		new Thread(new Runnable() {
 
 			@Override
@@ -104,13 +104,13 @@ public class BTSINFOActivity extends Activity implements RemoveListener {
 			public void onClick(View v) {
 
 				final List<String> list1 = list;
-				if (dialog == null) {
-					dialog = new ProgressDialog(BTSINFOActivity.this);
-				}
-				dialog.setTitle("wait");
-				dialog.setMessage("正在加载");
-				dialog.setCancelable(false);
-				dialog.show();
+//				if (dialog == null) {
+//					dialog = new ProgressDialog(BTSINFOActivity.this);
+//				}
+//				dialog.setTitle("wait");
+//				dialog.setMessage("正在加载");
+//				dialog.setCancelable(false);
+//				dialog.show();
 				new Thread(new Runnable() {
 
 					@Override

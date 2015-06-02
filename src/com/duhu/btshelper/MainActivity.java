@@ -5,6 +5,7 @@ import com.zxing.activity.CaptureActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		Bundle bundle = this.getIntent().getExtras();
 		username = bundle.getString("username");
 
@@ -42,13 +43,15 @@ public class MainActivity extends Activity {
 		btIdinput.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				btsid = etBtsid.getText().toString();
-				if (btsid == null) {
-					BTSID = 0;
+				if (TextUtils.isEmpty(etBtsid.getText())) {
+					Toast.makeText(MainActivity.this, "请输入正确站号~",
+							Toast.LENGTH_SHORT).show();
 				} else {
+					btsid = etBtsid.getText().toString();
 					BTSID = Integer.parseInt(btsid);
+					tvBtsidcheck.setText("获取到的基站ID是" + BTSID);
 				}
-				tvBtsidcheck.setText("获取到的基站ID是" + BTSID);
+
 			}
 		});
 
@@ -69,7 +72,7 @@ public class MainActivity extends Activity {
 							"没有获取到正确的BTSID，请重试，必须有ID才能进入！", Toast.LENGTH_SHORT);
 					toast.show();
 				} else {
-					
+
 					Intent intent = new Intent();
 					Bundle bundle = new Bundle();
 					bundle.putInt("BTSID", BTSID);
@@ -84,7 +87,7 @@ public class MainActivity extends Activity {
 		btGotolist.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				
+
 				Intent intent = new Intent(MainActivity.this,
 						BTSNameListActivity.class);
 				// intent.putExtra("BTSIDtoLIST",BTSID);

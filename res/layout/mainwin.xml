@@ -15,10 +15,11 @@
             android:layout_width="match_parent" 
             android:layout_height="match_parent" 
             android:layout_above="@android:id/tabs" 
+            android:layout_marginBottom="5dp"
             > 
         </FrameLayout>  
         <TabWidget 
-            android:background="@color/lime"
+            android:background="@color/lightblue"
             android:id="@android:id/tabs" 
              android:layout_width="match_parent" 
              android:layout_height="wrap_content" 

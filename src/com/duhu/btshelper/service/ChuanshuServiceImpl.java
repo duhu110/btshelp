@@ -25,7 +25,7 @@ public class ChuanshuServiceImpl implements ChuanshuService {
 	public List<String> getchuanshulist(int btsid) throws Exception {
 		List<String> list =new ArrayList<String>();
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101:8080/BTSHelper/GetChuanshulist.do";
+		String uri = "http://192.168.1.101/BTSHelper/GetChuanshulist.do";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		object.put("btsid", btsid);
@@ -57,7 +57,7 @@ public class ChuanshuServiceImpl implements ChuanshuService {
 	@Override
 	public void savechuanshulist(List<String> list, int btsid) throws Exception {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101:8080/BTSHelper/SaveChuanshu.do";
+		String uri = "http://192.168.1.101/BTSHelper/SaveChuanshu.do";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		JSONArray array = new JSONArray();

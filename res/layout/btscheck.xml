@@ -9,7 +9,7 @@
         android:id="@+id/btscheckrelative1"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/lime" >
+        android:background="@color/lightblue" >
 
         <ImageView
             android:id="@+id/basictitle3"
@@ -39,7 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/bcbtsave"
-            android:background="@color/lime"
+            android:background="@color/lightblue"
+             android:textSize="15sp"
             android:text="记录" />
 
         <Button
@@ -47,7 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:background="@color/lime"
+            android:background="@color/lightblue"
+             android:textSize="15sp"
             android:text="保存" />
     </RelativeLayout>
 

@@ -23,7 +23,7 @@ public class BtsinfoServiceImpl implements BtsinfoService {
 	public List<String> getbtsinfolist(int btsid) throws Exception {
 		List<String> list =new ArrayList<String>();
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101:8080/BTSHelper/GetBtsinfolist.do";
+		String uri = "http://192.168.1.101/BTSHelper/GetBtsinfolist.do";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		object.put("btsid", btsid);
@@ -55,7 +55,7 @@ public class BtsinfoServiceImpl implements BtsinfoService {
 	@Override
 	public void savebtsinfolist(List<String> list,int btsid) throws Exception {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101:8080/BTSHelper/SaveBtsInfo.do";
+		String uri = "http://192.168.1.101/BTSHelper/SaveBtsInfo.do";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		JSONArray array = new JSONArray();

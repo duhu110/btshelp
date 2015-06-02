@@ -10,7 +10,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher222" />
 
     <TextView
         android:id="@+id/aboutid2"
