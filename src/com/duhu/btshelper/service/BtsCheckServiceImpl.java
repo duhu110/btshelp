@@ -24,7 +24,7 @@ public class BtsCheckServiceImpl implements BtsCheckService {
 	@Override
 	public void upload(BtsCheckEntity btsCheck) throws Exception {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101/BTSHelper/BtsCheck.do";
+		String uri = "http://duhu110.oicp.net/BTSHelper/BtsCheck.do";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		object.put("btsid", btsCheck.getBtsid());
@@ -82,7 +82,7 @@ public class BtsCheckServiceImpl implements BtsCheckService {
 	public BtsCheckEntity download(int btsid) throws Exception {
 		BtsCheckEntity btsCheck = new BtsCheckEntity();
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101/BTSHelper/BtsCheckSelect";
+		String uri = "http://duhu110.oicp.net/BTSHelper/BtsCheckSelect";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		object.put("btsid", btsid);

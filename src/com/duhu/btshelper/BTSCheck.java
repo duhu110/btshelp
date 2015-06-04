@@ -28,25 +28,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class BTSCheck extends Activity {
-	TextView tvPeople, tvshebei_biaoshi, tvshebei_banka, tvshebei_zouxian,
-			tvtieta, tvshebei_jietou, tvshebei_gaopin, tvshebei_fengshan,
-			tvshebei_gaojing, tvshebei_qingjie, tvjichu_zhanzhi,
-			tvchuanshu_banka, tvdonglixitong, tvkongtiao_gaojing,
-			tvjichu_tiankui, tvchuanshu_gaojing, tvjichu_shigong,
-			tvfangleijiedi, tvhuanjing_wendu, tvchuanshu_jietou,
-			tvkongtiao_yunxing, tvhuanjing_shidu, tvhuanjing_qingjie,
-			tvhuanjing_xiaofang, tvkongtiao_qingjie, tvhuanjing_qita,
-			tvtiankui_xian, tvtiankui_mifeng, tvtiankui_jiedi, tvtiankui_wanqu;
-	Spinner spPeople, spshebei_biaoshi, spshebei_banka, spshebei_zouxian,
-			spchuanshu_gaojing, spfangleijiedi, spkongtiao_gaojing, sptieta,
-			spshebei_jietou, spshebei_gaopin, spshebei_fengshan,
-			spkongtiao_yunxing, spchuanshu_jietou, spshebei_gaojing,
-			spdonglixitong, spshebei_qingjie, spchuanshu_banka,
-			spjichu_zhanzhi, spkongtiao_qingjie, spjichu_tiankui,
-			spjichu_shigong, sphuanjing_wendu, sphuanjing_shidu,
-			sphuanjing_qingjie, sphuanjing_xiaofang, sphuanjing_qita,
-			sptiankui_xian, sptiankui_mifeng, sptiankui_jiedi, sptiankui_wanqu;
-	String people, checktime, shebei_biaoshi, shebei_banka, shebei_zouxian,
+	private TextView tvwelcome;
+	private TextView tvPeople, tvshebei_biaoshi, tvshebei_banka,
+			tvshebei_zouxian, tvtieta, tvshebei_jietou, tvshebei_gaopin,
+			tvshebei_fengshan, tvshebei_gaojing, tvshebei_qingjie,
+			tvjichu_zhanzhi, tvchuanshu_banka, tvdonglixitong,
+			tvkongtiao_gaojing, tvjichu_tiankui, tvchuanshu_gaojing,
+			tvjichu_shigong, tvfangleijiedi, tvhuanjing_wendu,
+			tvchuanshu_jietou, tvkongtiao_yunxing, tvhuanjing_shidu,
+			tvhuanjing_qingjie, tvhuanjing_xiaofang, tvkongtiao_qingjie,
+			tvhuanjing_qita, tvtiankui_xian, tvtiankui_mifeng, tvtiankui_jiedi,
+			tvtiankui_wanqu;
+	private Spinner spPeople, spshebei_biaoshi, spshebei_banka,
+			spshebei_zouxian, spchuanshu_gaojing, spfangleijiedi,
+			spkongtiao_gaojing, sptieta, spshebei_jietou, spshebei_gaopin,
+			spshebei_fengshan, spkongtiao_yunxing, spchuanshu_jietou,
+			spshebei_gaojing, spdonglixitong, spshebei_qingjie,
+			spchuanshu_banka, spjichu_zhanzhi, spkongtiao_qingjie,
+			spjichu_tiankui, spjichu_shigong, sphuanjing_wendu,
+			sphuanjing_shidu, sphuanjing_qingjie, sphuanjing_xiaofang,
+			sphuanjing_qita, sptiankui_xian, sptiankui_mifeng, sptiankui_jiedi,
+			sptiankui_wanqu;
+	private String people, checktime, shebei_biaoshi, shebei_banka, shebei_zouxian,
 			chuanshu_gaojing, fangleijiedi, shebei_jietou, shebei_gaopin,
 			shebei_fengshan, shebei_gaojing, donglixitong, kongtiao_qingjie,
 			shebei_qingjie, chuanshu_jietou, jichu_zhanzhi, jichu_tiankui,
@@ -65,6 +68,7 @@ public class BTSCheck extends Activity {
 	private IHandler handler = new IHandler(this);
 
 	private void init() {
+		tvwelcome = (TextView) findViewById(R.id.bctvwelcome);
 		viewButton = (Button) findViewById(R.id.bcbtview);
 		saveButton = (Button) findViewById(R.id.bcbtsave);
 		tvPeople = (TextView) findViewById(R.id.bctvPeople);
@@ -138,10 +142,11 @@ public class BTSCheck extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.btscheck);
 		init();
-		
+
 		Bundle bundle = this.getIntent().getExtras();
 		Btsid = bundle.getInt("BTSID");
 		username = bundle.getString("username");
+		tvwelcome.setText(bundle.getString("BTSNAME"));
 		String[] delfultItems = getResources().getStringArray(
 				R.array.btscheckdefultarray);
 		ArrayAdapter<String> delfultAdapter = new ArrayAdapter<String>(this,
@@ -716,18 +721,18 @@ public class BTSCheck extends Activity {
 				}).start();
 			}
 		});
-		 viewButton.setOnClickListener(new OnClickListener() {
-		
-		 @Override
-		 public void onClick(View v) {
-			 Intent intent = new Intent();
+		viewButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
 				Bundle bundle = new Bundle();
 				bundle.putInt("BTSID", Btsid);
 				intent.putExtras(bundle);
 				intent.setClass(BTSCheck.this, LastBtsCheck.class);
 				startActivityForResult(intent, RC_LAST);
-		 }
-		 });
+			}
+		});
 	}
 
 	private void showtip(String string) {
@@ -774,9 +779,10 @@ public class BTSCheck extends Activity {
 		case RC_LAST:
 			if (resultCode == RESULT_OK) {
 				String str = data.getExtras().getString("result");
-				
+
 			} else if (resultCode == RESULT_CANCELED) {
-		//		Toast.makeText(BTSCheck.this, "不成功",Toast.LENGTH_SHORT).show();
+				// Toast.makeText(BTSCheck.this,
+				// "不成功",Toast.LENGTH_SHORT).show();
 			}
 			break;
 		default:

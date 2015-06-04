@@ -43,20 +43,20 @@ public class ChuanshuActivity extends Activity implements RemoveListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chuanshu);
-//		tvwelcome = (TextView) findViewById(R.id.chuanshu_Welcome);
+		tvwelcome = (TextView) findViewById(R.id.chuanshu_Welcome);
 		etaddEditText=(EditText) findViewById(R.id.chuanshuedadd);
 		btadd=(ImageButton) findViewById(R.id.chuanshubtadd);
 		btsave=(Button) findViewById(R.id.chuanshubtsave);
 		Bundle bundle = this.getIntent().getExtras();
 		Btsid = bundle.getInt("BTSID");
-	//	tvwelcome.setText("欢迎来到" + Btsid + "号站！");
-		if (dialog == null) {
-			dialog = new ProgressDialog(ChuanshuActivity.this);
-		}
-		dialog.setTitle("wait");
-		dialog.setMessage("正在加载");
-		dialog.setCancelable(false);
-		dialog.show();
+		tvwelcome.setText(bundle.getString("BTSNAME"));
+//		if (dialog == null) {
+//			dialog = new ProgressDialog(ChuanshuActivity.this);
+//		}
+//		dialog.setTitle("wait");
+//		dialog.setMessage("正在加载");
+//		dialog.setCancelable(false);
+//		dialog.show();
 		new Thread(new Runnable() {
 
 			@Override

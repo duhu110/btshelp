@@ -26,7 +26,7 @@ public class BasicDataServiceImpl implements BasicDataService {
 		//List<BasicdataEntity> basicdatalist = new ArrayList<BasicdataEntity>();
 		String[] strings =new String[10];
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101/BTSHelper/BD.do";
+		String uri = "http://duhu110.oicp.net/BTSHelper/BD.do";
 		// HttpPost post = new HttpPost(uri);
 		// HttpGet get = new HttpGet(uri);
 		// HttpResponse response = client.execute(get);
@@ -122,7 +122,7 @@ public class BasicDataServiceImpl implements BasicDataService {
 	@Override
 	public void baocun(BasicdataEntity basicdataEntity) throws Exception {
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101/BTSHelper/BDSAVE.DO";
+		String uri = "http://duhu110.oicp.net/BTSHelper/BDSAVE.DO";
 		HttpPost post = new HttpPost(uri);
 		JSONObject object = new JSONObject();
 		object.put("btsid", basicdataEntity.getBtsid());

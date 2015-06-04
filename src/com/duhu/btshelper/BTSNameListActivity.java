@@ -25,6 +25,7 @@ public class BTSNameListActivity extends Activity {
 
 	private ListView listView;
 	private int BTSID;
+	private String btsname;
 	private List<BtsnameEntity> btsnameList;
 	private BtsnameAdapter adapter;
 	private static ProgressDialog dialog;
@@ -87,12 +88,14 @@ public class BTSNameListActivity extends Activity {
 					long arg3) {
 				BtsnameEntity btsnameEntity = adapter.getItem(arg2);
 				BTSID = btsnameEntity.getBtsid();
+				btsname = btsnameEntity.getBtsname();
 //				ListView list = (ListView)arg0;
 //				Map<String,String> item = (Map<String,String>) list.getItemAtPosition(arg2);
 //				 BTSID = Integer.parseInt(item.get());
 				 if (BTSID != 0){
 				 Intent intent = new Intent();
 				 intent.putExtra("BTSIDfromLIST",BTSID);
+				 intent.putExtra("BTSNAME",btsname);
 				 setResult(RESULT_OK,intent);
 				 //finishActivity(RESULT_OK);
 				 finish();

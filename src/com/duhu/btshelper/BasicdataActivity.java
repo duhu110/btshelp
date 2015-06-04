@@ -27,9 +27,10 @@ import android.widget.Toast;
 
 public class BasicdataActivity extends SherlockActivity {
 
-	private TextView tvWelcome;
+	private TextView tvWelcome,etname;
 	private int BTSID;
-	EditText etname, etjindu, etweidu, etfangweijiao0, etfangweijiao1,
+	private String btsname;
+	EditText  etjindu, etweidu, etfangweijiao0, etfangweijiao1,
 			etfangweijiao2, etguagao, ethaiba, etxiaiqngjiao0, etxiaqingjiao1,
 			etxiaqingjiao2;
 	Button btsave;
@@ -46,7 +47,7 @@ public class BasicdataActivity extends SherlockActivity {
 	private BasicDataService basicDataService1 = new BasicDataServiceImpl();
 
 	private void init() {
-		etname = (EditText) findViewById(R.id.etbasicdatabtsname);
+		etname = (TextView) findViewById(R.id.etbasicdatabtsname);
 		etjindu = (EditText) findViewById(R.id.etbasicdatajindu);
 		etweidu = (EditText) findViewById(R.id.etbasicdataweidu);
 		etfangweijiao0 = (EditText) findViewById(R.id.etbasicdatafangweijiao0);
@@ -73,6 +74,8 @@ public class BasicdataActivity extends SherlockActivity {
 		Log.d("init", "initsucess");
 		Bundle bundle = this.getIntent().getExtras();
 		BTSID = bundle.getInt("BTSID");
+		btsname = bundle.getString("BTSNAME");
+		etname.setText(btsname);
 //		tvWelcome.setText("ª∂”≠¿¥µΩ" + BTSID + "∫≈’æ£°");
 		Log.d("tvwelcome", "setsucess");
 		if (dialog == null) {

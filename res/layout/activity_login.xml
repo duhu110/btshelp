@@ -178,6 +178,6 @@
         android:layout_marginLeft="10dp"
         android:contentDescription="@string/app_name"
         android:scaleType="fitStart"
-        android:src="@drawable/img_main_title1" />
+        android:src="@drawable/image_maintitle22" />
 
 </RelativeLayout>

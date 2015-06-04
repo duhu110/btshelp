@@ -21,7 +21,7 @@ public class BtsnamelistServiceImpl implements BtsnamelistService {
 		List<BtsnameEntity> btsnamelist = new ArrayList<BtsnameEntity>();
 
 		HttpClient client = new DefaultHttpClient();
-		String uri = "http://192.168.1.101/BTSHelper/Btsnamelist.do";
+		String uri = "http://duhu110.oicp.net/BTSHelper/Btsnamelist.do";
 		// HttpPost post = new HttpPost(uri);
 		HttpGet get = new HttpGet(uri);
 

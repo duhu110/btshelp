@@ -16,23 +16,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_check" />
 
         <TextView
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/basictitle3"
             android:gravity="center_vertical"
             android:text="基站巡检"
             android:textSize="18sp" />
-        <!--
-             <TextView
-            android:id="@+id/bctvwelcome"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/bcbtview" />
-        -->
+<!--   -->
 
         <Button
             android:id="@+id/bcbtview"
@@ -40,8 +34,8 @@
             android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/bcbtsave"
             android:background="@color/lightblue"
-             android:textSize="15sp"
-            android:text="记录" />
+            android:text="记录"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/bcbtsave"
@@ -49,14 +43,23 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:background="@color/lightblue"
-             android:textSize="15sp"
-            android:text="保存" />
+            android:text="保存"
+            android:textSize="15sp" />
     </RelativeLayout>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/bctvwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btscheckrelative1"
+        android:gravity="center"
+        android:textSize="15sp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btscheckrelative1" >
+        android:layout_below="@+id/bctvwelcome" >
 
         <LinearLayout
             android:layout_width="fill_parent"

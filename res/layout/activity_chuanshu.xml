@@ -16,16 +16,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_launcher" />
-        
+            android:src="@drawable/ic_chuanshu" />
+
         <TextView
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/basictitle2"
             android:gravity="center_vertical"
-            android:text="基站传输信息" 
-            android:textSize="18sp"/>
-        <!-- <TextView
+            android:text="基站传输信息"
+            android:textSize="18sp" />
+        <!--
+             <TextView
             android:id="@+id/chuanshu_Welcome"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
@@ -33,23 +35,34 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="欢迎来到XX基站"
-            android:textSize="20dp" /> -->
+            android:textSize="20dp" />
+        -->
 
         <Button
             android:id="@+id/chuanshubtsave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="保存" 
             android:background="@color/lightblue"
-             android:textSize="15sp"/>
+            android:text="保存"
+            android:textSize="15sp" />
     </RelativeLayout>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/chuanshu_Welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btsinforelative1"
+        android:gravity="center"
+        android:text="欢迎来到XX基站"
+        android:textSize="15sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btsinforelativeLayout1"
-        android:layout_below="@+id/btsinforelative1"
+        android:layout_below="@+id/chuanshu_Welcome"
         android:layout_margin="5dp"
         android:background="@color/white" >
 

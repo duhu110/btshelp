@@ -17,7 +17,7 @@ import android.widget.TabHost.TabSpec;
 public class MainWIN extends TabActivity {
 
 	int BTSID;
-	private String username;
+	private String username,btsname;
 	SlidingMenu slidingMenu;
 	Button buttonrelog, buttonrecheck, buttonabout;
 
@@ -31,9 +31,11 @@ public class MainWIN extends TabActivity {
 		Bundle bundle = this.getIntent().getExtras();
 		BTSID = bundle.getInt("BTSID");
 		username = bundle.getString("username");
+		btsname = bundle.getString("BTSNAME");
 		Bundle bundle1 = new Bundle();
 		bundle1.putInt("BTSID", BTSID);
 		bundle1.putString("username", username);
+		bundle1.putString("BTSNAME", btsname);
 
 		TabSpec tabSpec1 = tabHost
 				.newTabSpec("tab1")
